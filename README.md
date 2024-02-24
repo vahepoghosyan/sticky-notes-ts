@@ -6,13 +6,13 @@
 Install dependencies
 
 ```bash
-yarn install
+npm install
 ```
 
 Run project
 
 ```bash
-yarn start
+npm run dev
 ```
 
 ## Features
