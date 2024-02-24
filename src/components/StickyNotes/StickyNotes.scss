@@ -1,0 +1,38 @@
+.sticky-notes {
+    .notes-container {
+        height: calc(100vh - 84px);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .remove-area {
+        position: absolute;
+        right: -300px;
+        bottom: -300px;
+        z-index: 0;
+        background-image: radial-gradient(red -150%, rgba(255, 0, 0, 0) 70%);
+        border-radius: 100%;
+        width: 600px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity, ease-in-out 200ms;
+
+        img {
+            width: 50px;
+            transform: translate(-120%, -120%);
+        }
+
+        &.show {
+            opacity: 1;
+        }
+
+        &.highlight {
+            background-image: radial-gradient(red, rgba(255, 0, 0, 0) 70%);
+        }
+    }
+}
